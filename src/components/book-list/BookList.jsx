@@ -4,6 +4,7 @@ import BookListItem from "../book-list-item/BookListItem";
 import { connect } from "react-redux";
 import withBookstoreService from "../hoc/with-bookstore-service";
 import { booksLoaded } from "../../actions";
+import { compose } from "redux";
 
 function BookList({ books, bookstoreService, booksLoaded }) {
   useEffect(() => {
@@ -34,6 +35,7 @@ const mapDispatchToProps = {
   booksLoaded,
 };
 
-export default withBookstoreService(
-  connect(mapStateToProps, mapDispatchToProps)(BookList)
-);
+export default compose(
+  withBookstoreService,
+  connect(mapStateToProps, mapDispatchToProps)
+)(BookList);
