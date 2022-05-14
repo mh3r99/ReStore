@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./components/App/App";
 import store from "./store";
 import BookstoreService from "./services/bookstore-service";
-import ErrorBoundary from "./components/error-boundary/ErrorBoundary";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import { BookstoreServiceProvider } from "./components/bookstore-service-context/bookstore-service-context";
 
 const bookstoreService = new BookstoreService();
