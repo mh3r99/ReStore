@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./BookList.css";
-import BookListItem from "../book-list-item/BookListItem";
+import BookListItem from "../BookListItem/BookListItem";
 import { connect } from "react-redux";
-import withBookstoreService from "../hoc/with-bookstore-service";
+import withBookstoreService from "../hoc/withBookstoreService";
 import { booksLoaded } from "../../actions";
 import { compose } from "redux";
 
@@ -13,7 +13,7 @@ function BookList({ books, bookstoreService, booksLoaded }) {
   }, []);
 
   return (
-    <ul>
+    <ul className="book-list">
       {books.map((book) => {
         return (
           <li key={book.id}>
