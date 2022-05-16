@@ -45,7 +45,7 @@ function BookListContainer({
   return <BookList books={books} onAddedToCart={onAddedToCart} />;
 }
 
-const mapStateToProps = ({ books, loading, error }) => {
+const mapStateToProps = ({ bookList: { books, loading, error } }) => {
   return {
     books,
     loading,
