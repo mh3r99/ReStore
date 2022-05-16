@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import withBookstoreService from "../hoc/withBookstoreService";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import CartPage from "../pages/CartPage";

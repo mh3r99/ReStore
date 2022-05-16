@@ -1,8 +1,8 @@
 import React from "react";
-import BookList from "../BookList/BookList";
+import BookListContainer from "../BookList/BookList";
 
 const HomePage = () => {
-  return <BookList />;
+  return <BookListContainer />;
 };
 
 export default HomePage;
