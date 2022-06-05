@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReStore/static/css/main.f25e3522.css",
+    "main.js": "/ReStore/static/js/main.9e388d42.js",
+    "index.html": "/ReStore/index.html",
+    "main.f25e3522.css.map": "/ReStore/static/css/main.f25e3522.css.map",
+    "main.9e388d42.js.map": "/ReStore/static/js/main.9e388d42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25e3522.css",
+    "static/js/main.9e388d42.js"
+  ]
+}
